@@ -20,3 +20,9 @@ jobs:
       # Checkout the repository to the GitHub Actions runner
       - name: Checkout
         uses: actions/checkout@v2
+      - id: "auth"
+        name: "Authenticate to Google Cloud"
+        uses: "google-github-actions/auth@v1"
+        with:
+          workload_identity_provider: "projects/906203989757/locations/global/workloadIdentityPools/my-pool/providers/my-provider"
+          service_account: "cicd-superadmin@tf-state-00.iam.gserviceaccount.com"
