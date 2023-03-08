@@ -40,6 +40,7 @@ jobs:
       - name: Terraform Plan
         run: |
           gcloud auth list
+          gsutil ls gs://tf-state-00-v1
           terraform version
           terraform init
           terraform plan
