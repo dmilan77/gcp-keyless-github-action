@@ -39,7 +39,6 @@ jobs:
           version: ">= 363.0.0"
       - name: Terraform Plan
         run: |
-          echo "$(PWD)"
           gcloud auth list
           terraform version
           terraform init
