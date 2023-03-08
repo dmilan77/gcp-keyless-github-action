@@ -36,3 +36,5 @@ jobs:
       - name: Setup Terraform with specified version on the runner
         run: |
           terraform version
+          terraform init
+          terraform plan
