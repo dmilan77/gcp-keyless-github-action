@@ -22,6 +22,5 @@ gcloud iam service-accounts add-iam-policy-binding "cicd-superadmin@${PROJECT_ID
   --project="${PROJECT_ID}" \
   --role="roles/iam.workloadIdentityUser" \
   --member="principalSet://iam.googleapis.com/projects/906203989757/locations/global/workloadIdentityPools/my-pool/attribute.repository/dmilan77/gcp-keyless-github-action"
-
   
 ```
